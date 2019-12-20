@@ -1,13 +1,12 @@
 <?php
 
 return [
+
     /*
-     * The type of documentation output to generate.
-     * - "static" will generate a static HTMl page in the /public/docs folder,
-     * - "laravel" will generate the documentation as a Blade view,
-     * so you can add routing and authentication.
+     * The output path for the generated documentation.
+     * This path should be relative to the root of your application.
      */
-    'type' => 'static',
+    'output' => 'docs',
 
     /*
      * The router to be used (Laravel or Dingo).
