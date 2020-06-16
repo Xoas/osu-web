@@ -92,9 +92,8 @@ class BeatmapsetSearch extends RecordSearch
         return $this
             ->response()
             ->records()
-            ->with(['beatmaps' => function ($q) {
-                return $q->withMaxCombo();
-            }])->get();
+            ->with('beatmaps')
+            ->get();
     }
 
     private function addBlacklistFilter($query)

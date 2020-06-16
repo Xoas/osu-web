@@ -287,7 +287,7 @@ class BeatmapsetsController extends Controller
             'beatmapsets' => json_collection(
                 $records,
                 new BeatmapsetTransformer,
-                'beatmaps.max_combo'
+                'beatmaps'
             ),
             'cursor' => $search->getSortCursor(),
             'recommended_difficulty' => $params->getRecommendedDifficulty(),
